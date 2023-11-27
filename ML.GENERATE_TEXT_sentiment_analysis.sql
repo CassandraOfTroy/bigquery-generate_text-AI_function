@@ -1,6 +1,6 @@
 --Generate the positive/negative sentiment
 SELECT
-  ml_generate_text_result['predictions'][0]['content'] AS generated_text,
+  ml_generate_text_result['predictions'][0]['content'] AS review_sentiment,
   * EXCEPT (ml_generate_text_status,ml_generate_text_result)
 FROM
   ML.GENERATE_TEXT(
