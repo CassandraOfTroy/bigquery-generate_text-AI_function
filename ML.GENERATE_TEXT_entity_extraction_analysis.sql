@@ -15,6 +15,6 @@ FROM
     ),
     STRUCT(
       0.2 AS temperature,
-      100 AS max_output_tokens,
+      20 AS max_output_tokens,
       0.2 AS top_p, 
-      15 AS top_k));
+      5 AS top_k));
